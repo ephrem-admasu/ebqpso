@@ -18,9 +18,10 @@ git clone https://github.com/ephrem-admasu/ebqpso.git
 ```
 
 ### Example
-```
+```python
 from ebqpso import EBQPSO
 import benchmark_functions as bf # install benchmark_functions using pip install benchmark_functions
+import numpy as np
 
 func = bf.Schwefel(n_dimensions=4)
 
@@ -29,10 +30,10 @@ D = func.n_dimensions() # get num of dimensions from fun
 nPop = 50
 maxiter = 1000
 lambda_ = 5
-lb = fun.suggested_bounds()[0]
-ub = fun.suggested_bounds()[1]
+lb = func.suggested_bounds()[0]
+ub = func.suggested_bounds()[1]
 
-gbest, fbest, history = EBQPSO(func, D, nPop, lb, ub, maxiter, labda_)
+gbest, fbest, history = EBQPSO(func, D, nPop, lb, ub, maxiter, lambda_)
 
 print("Optimum paramters: ", gbest)
 print("Minimum value: ", fbest)
@@ -42,4 +43,10 @@ plt.plot(np.arange(len(history))+1, history)
 plt.ylabel("Fitness")
 plt.xlabel("Generation")
 plt.show()
+plt.savefig('fitness_plot.png', dpi=300)
 ```
+Optimum paramters:  [418.81653623 418.81653623 418.81653623 418.81653623]
+Minimum value:  2.3355023046110546
+
+
+
