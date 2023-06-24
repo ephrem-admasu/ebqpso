@@ -48,5 +48,5 @@ plt.savefig('fitness_plot.png', dpi=300)
 Optimum paramters:  [418.81653623 418.81653623 418.81653623 418.81653623]  
 Minimum value:  2.3355023046110546
 
-
+[FitnessPlot](https://github.com/ephrem-admasu/ebqpso/blob/main/fitness_plot.png)
 
