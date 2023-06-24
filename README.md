@@ -10,3 +10,8 @@ by breeding them can result in significant improvement in the performance and gl
 
 EB-QPSO is a more powerful and efficient optimization algorithm than QPSO. It is able to escape from local optima more easily, and it converges to the global optimum faster. 
 As a result, EB-QPSO is a better choice for solving difficult optimization problems.
+
+### Installation
+'''
+pip install ebqpso
+'''
