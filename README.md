@@ -44,7 +44,7 @@ plt.ylabel("Fitness")
 plt.xlabel("Generation")
 plt.show()
 ```
-Optimum paramters:  [420.65544333 420.65544333 420.65544333 420.65544333]
+Optimum paramters:  [420.65544333 420.65544333 420.65544333 420.65544333]  
 Minimum value:  0.04958878158049629
 
 ![FitnessPlot](https://github.com/ephrem-admasu/ebqpso/blob/main/fitness_plot.png)
