@@ -16,3 +16,30 @@ For usage simply clone using:
 ```
 git clone https://github.com/ephrem-admasu/ebqpso.git
 ```
+
+### Example
+```
+from ebqpso import EBQPSO
+import benchmark_functions as bf # install benchmark_functions using pip install benchmark_functions
+
+func = bf.Schwefel(n_dimensions=4)
+
+# Initialize parameters
+D = func.n_dimensions() # get num of dimensions from fun
+nPop = 50
+maxiter = 1000
+lambda_ = 5
+lb = fun.suggested_bounds()[0]
+ub = fun.suggested_bounds()[1]
+
+gbest, fbest, history = EBQPSO(func, D, nPop, lb, ub, maxiter, labda_)
+
+print("Optimum paramters: ", gbest)
+print("Minimum value: ", fbest)
+
+import matplotlib.pyplot as plt
+plt.plot(np.arange(len(history))+1, history)
+plt.ylabel("Fitness")
+plt.xlabel("Generation")
+plt.show()
+```
