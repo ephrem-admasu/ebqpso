@@ -1,5 +1,5 @@
 ## Quantum-behaved Particle Swarm Optimization with Eltist Breeding
-This is a Python implementation of quantum-behaved particle swarm optimization with elitist breeding. The project is at its earlies stage but can be used for optimization tasks.
+This is a Python implementation of quantum-behaved particle swarm optimization with elitist breeding. The project is at its earliest stage but can be used for optimization tasks.
 
 ### Description
 QPSO introduces a quantum-like behavior into the PSO algorithm by allowing the particles to "tunnel" through potential barriers. 
