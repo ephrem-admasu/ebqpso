@@ -43,10 +43,9 @@ plt.plot(np.arange(len(history))+1, history)
 plt.ylabel("Fitness")
 plt.xlabel("Generation")
 plt.show()
-plt.savefig('fitness_plot.png', dpi=300)
 ```
-Optimum paramters:  [418.81653623 418.81653623 418.81653623 418.81653623]  
-Minimum value:  2.3355023046110546
+Optimum paramters:  [420.65544333 420.65544333 420.65544333 420.65544333]
+Minimum value:  0.04958878158049629
 
 ![FitnessPlot](https://github.com/ephrem-admasu/ebqpso/blob/main/fitness_plot.png)
 
