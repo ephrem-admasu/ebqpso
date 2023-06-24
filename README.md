@@ -12,6 +12,6 @@ EB-QPSO is a more powerful and efficient optimization algorithm than QPSO. It is
 As a result, EB-QPSO is a better choice for solving difficult optimization problems.
 
 ### Installation
-'''
+```
 pip install ebqpso
-'''
+```
