@@ -4,8 +4,8 @@ This is a Python implementation of quantum-behaved particle swarm optimization w
 ### Description
 QPSO introduces a quantum-like behavior into the PSO algorithm by allowing the particles to "tunnel" through potential barriers. 
 This means that the particles can escape from local optima more easily, and they can also explore the search space more efficiently.  In PSO and QPSO,
-the personla best of particle and the global best of the swam (collectively known as elitists) are simply stored in memory and used for solution comparison 
-or go through basic computational steps to help update the exploration process. However, empirical evidence suggests that taking advantage of these elit partciles
+the personal best of particle and the global best of the swam (collectively known as elitists) are simply stored in memory and used for solution comparison 
+or go through basic computational steps to help update the exploration process. However, empirical evidence suggests that taking advantage of these elit particles
 by breeding them can result in significant improvement in the performance and global searching capability of the algorithm.
 
 EB-QPSO is a more powerful and efficient optimization algorithm than QPSO. It is able to escape from local optima more easily, and it converges to the global optimum faster. 
@@ -23,6 +23,7 @@ from ebqpso import EBQPSO
 import benchmark_functions as bf # install benchmark_functions using pip install benchmark_functions
 import numpy as np
 
+# initialize Schwefel functions with four dimensions
 func = bf.Schwefel(n_dimensions=4)
 
 # Initialize parameters
